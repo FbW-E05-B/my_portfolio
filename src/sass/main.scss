@@ -1,0 +1,16 @@
+@import "base";
+// You need the base only when you are not using bootstrap. In that case, go to _base.scss
+// to customize it as you may want.
+
+// @import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Write your sass code here or import partials
+
+.hero {
+  display: flex;
+  height: 100vh;
+  background-color: orange;
+  justify-content: center;
+  align-items: center;
+}
