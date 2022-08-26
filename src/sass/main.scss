@@ -11,14 +11,7 @@ nav {
   background-color: aliceblue;
 }
 
-.hero {
-  display: flex;
-  height: 100vh;
-  background-color: orange;
-  justify-content: center;
-  align-items: center;
-}
-#aSide model-viewer {
+#viewer model-viewer {
   height: 80%;
   width: 1800px;
   text-align: center;
