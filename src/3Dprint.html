@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>3D Models</title>
+    <title>My Models</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -39,7 +39,7 @@
 
   <body>
     <!-- Main Container -->
-    <nav id="navbar-example2" class="nav navbar-expand-sm navbar-light fixed-top justify-content-center">
+     <nav id="navbar-example2" class="nav navbar-expand-sm navbar-light fixed-top justify-content-center">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -94,11 +94,12 @@
                    </div>
       </div>
     </nav>
-
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+  
       <!-- An aside -->
       <!-- This is for holding the 3D object -->
       
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0"></div>
+      
       
       <!-- Content container -->
       <!-- This is for holding some brief description about the 3D object -->
@@ -114,16 +115,8 @@
       <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
         <div class="col">
           <div class="card">
+            <img src="../src/images/PHOTO-2021-02-11-11-36-04.jpg" class="card-img-top" alt="...">
             
-            <model-viewer
-          src="assets/tubetest.gltf"
-          alt="Tube"
-          auto-rotate
-          camera-controls
-          ar
-         
-        >
-        </model-viewer>
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -132,15 +125,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <model-viewer
-          src="assets/Basic_Part_Design_Tutorial-refine_Pocket001.gltf"
-          alt="part1"
-          auto-rotate
-          camera-controls
-          ar
-          ios-src="assets/Basic_Part_Design_Tutorial-refine_Pocket001.gltf"
-        >
-        </model-viewer>
+            <img src="../src/images/PHOTO-2021-02-11-11-36-13.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -150,79 +135,29 @@
         <div class="col">
           <div class="card">
             
-            <model-viewer
-          src="assets/Page_073_Exercise3D-14_byHannu-Body.gltf"
-          alt="part2"
-          auto-rotate
-          camera-controls
-          ar
-          ios-src="assets/Page_073_Exercise3D-14_byHannu-Body.gltf"
-        >
-        </model-viewer>
+            <img src="../src/images/PHOTO-2021-02-11-11-36-35.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
             </div>
           </div>
         </div>
-        <div class="col">
+       <div class="col">
           <div class="card">
             
-            <model-viewer
-          src="assets/page59_bysalp-Body.gltf"
-          alt="part3"
-          auto-rotate
-          camera-controls
-          ar
-          ios-src="assets/page59_bysalp-Body.gltf">
-        </model-viewer>
+            <img src="../src/images/dragon.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
             </div>
           </div>
         </div>
-         <div class="col">
-          <div class="card">
-            
-            <model-viewer
-          src="assets/Page_017_Exercise2D-09_byHannu-Body.gltf"
-          alt="part4"
-          auto-rotate
-          camera-controls
-          ar
-          ios-src="assets/Page_017_Exercise2D-09_byHannu-Body.gltf"
-        >
-        </model-viewer>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-         <div class="col">
-          <div class="card">
-            
-            <model-viewer
-          src="assets/WhiffleBall_Tutorial_FCWiki-Cut004.gltf"
-          alt="part5"
-          auto-rotate
-          camera-controls
-          ar
-          ios-src="assets/WhiffleBall_Tutorial_FCWiki-Cut004.gltf"
-        >
-        </model-viewer>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-     
+        
      
     <footer class="footer fixed-bottom justify-content-center">
       <p>Copyrights 2022</p>
-    </footer> </div>
+    </footer>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
