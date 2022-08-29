@@ -25,16 +25,29 @@
       nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
     ></script>
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+<!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+<!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+<script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+<!-- 💁 OPTIONAL: Fullscreen polyfill is required for experimental AR features in Canary -->
+<!--<script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>-->
+
+<!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
+<!--<script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>-->
     <title>My Portfolio</title>
   </head>
   <body>
-    
         <nav id="navbar-example2" class="nav navbar-expand-sm navbar-light fixed-top justify-content-center">
           <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-evenly" id="navbarTogglerDemo01">
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+          <div class="collapse navbar-collapse justify-content-evenly" id="navbarTogglerDemo01">
                <li class="navbar-brand nav-item dropdown">
                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Area of interest</a>
                    <ul class="dropdown-menu">
@@ -50,7 +63,7 @@
                        <li><a class="dropdown-item" href="3Dprint.html" target="_blank">3D-Printer</a></li>
                        <li><a class="dropdown-item" href="../src/vrlm.html" target="_blank">VMLR</a></li>
                        </ul>
-                       </li>
+                </li>
                        <li class="nav-item dropdown">
                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Automatization</a>
                        <ul class="dropdown-menu">
@@ -58,7 +71,7 @@
                        </ul>
                        </li>
 
-          <li class="nav-item dropdown">
+                   <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">My Models</a>
           <ul class="dropdown-menu">
                        <li><a class="dropdown-item" href="wine.html" target="_blank">Wine support</a></li>
@@ -88,7 +101,9 @@
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
   
 
-
+<div class="container">
+  
+</div>
      <!-- <div class="text-center">
   
       </div> -->
